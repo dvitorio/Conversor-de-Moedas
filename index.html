@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Conversor de moedas</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="icon" href="/img/exchange-rate.png" />
+     <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+
+     <div class="col-sm-4 generalContainer container mt-3 rounded">
+          <div class="image py-3">
+               <img src="img/exchange.png" alt="">
+          </div>
+          <h3 class="mb-4 text-center text-white">Currency Exchange</h3>
+          <div class="row">
+               <div class="col-sm-6">
+                    <label class="form-label text-white" for="">Moeda origem</label>
+                    <select class="form-control mb-3" name="" id="">
+                         <option value="" disabled selected></option>
+                         <option value="">Bitcoin para Dólar</option>
+                         <option value="">Bitcoin para Real</option>
+                         <option value="">Dólar para Bitcoin (BTC)</option>
+                         <option value="">Dólar para Real</option>
+                         <option value="">Real para Bitcoin (BTC)</option>
+                         <option value="">Real para Dólar</option>
+                    </select>
+               </div>
+               <div class="col-sm-6">
+                    <label class="form-label text-white" for="currencyConverted">Valor a converter</label>
+                    <input class="form-control" type="text" id="currencyMoney">
+               </div>
+          </div>
+
+          <button class="btn btn-success my-3" id="btnConvertCurrency">Converter moeda</button>
+
+          <div class="d-none results" id="results">
+               <input class="form-control text-center w-100" type="text" id="currencyConverted">
+          </div>
+
+          <div class="btnControls d-none mb-4 row">
+               <div class="col-sm-6">
+                    <button class="btn btn-block btn-primary mb-4">Nova conversão</button>
+               </div>
+               <div class="col-sm-6">
+                    <button class="btn btn-block btn-danger">Sair do app</button>
+               </div>
+          </div>
+
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>

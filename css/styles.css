@@ -1,0 +1,44 @@
+*{
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+}
+
+body{
+     background-image: url('/img/coins.jpg');
+     background-size: cover;
+}
+
+.image{
+     align-items: center;
+     display: flex;
+     justify-content: center;
+}
+
+#currencyResult{
+     font-size: 2rem !important;
+     height: 50px !important;
+}
+
+#currencyConverted{
+     background-color: transparent;
+     border: none;
+     color: white;
+     font-size: 2rem !important;
+     height: 50px !important;
+}
+
+.generalContainer{
+     backdrop-filter: blur(20px);
+     background-color: transparent !important;
+     border: .25px solid rgb(60, 55, 55);
+     height: auto;
+     max-width: 600px;
+     min-width: 350px;
+     padding-bottom: 20px !important;
+}
+
+
+
